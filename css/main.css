@@ -341,7 +341,7 @@ li {
   content: " ";
   bottom: 0;
   position: absolute;
-  width: 16px;
+  width: 0px;
   border-bottom: 2px solid #ff8a00;
   border-radius: 72px;
   transition: 0.5s;
@@ -392,7 +392,7 @@ li {
 }
 .footer__social-block img:hover {
   filter: drop-shadow(0 0 5px #ff8a00);
-  transition: 1s;
+  transition: 0.5s;
 }
 @media (max-width: 767.9px) {
   .footer__social-block .social-link {

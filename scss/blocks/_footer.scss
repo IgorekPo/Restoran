@@ -41,7 +41,7 @@
                                     content: ' ';
                                     bottom: 0;
                                     position: absolute;
-                                    width: 16px;
+                                    width: 0px;
                                     border-bottom: 2px solid #ff8a00;
                                     border-radius: 72px;
                                     transition: .5s;
@@ -96,7 +96,7 @@
     }
     img:hover{
         filter: drop-shadow(0 0 5px #ff8a00);
-        transition: 1s;
+        transition: .5s;
     }
     @media(max-width:767.9px){
         .social-link{
