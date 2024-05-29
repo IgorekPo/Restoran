@@ -1,7 +1,13 @@
 .header {
-    position: relative;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background: linear-gradient(180deg, #7349166e 0%, #00000057 100%);
 }
 .header__conteiner {
+
 }
 .header__body {
     display: flex;

@@ -1,4 +1,12 @@
-
+%mainTextColor{
+    color: #ff8a00;
+}
+%mainBgColor{
+    background-color: #ff8a00;
+}
+%secondBgColor{
+    background-color: #3fa72f;
+}
 %titleFonts {
     font-weight: 700;
     line-height: 110%;
@@ -29,7 +37,7 @@
 %headerFonts {
     font-weight: 400;
     @include adaptivFonts ( 14, 12);
-    color: #311f09;
+    color: #fff;
     span {
         color: #ff8a00;
     }
@@ -50,7 +58,7 @@
 %logoText {
     font-weight: 600;
     font-size: 14px;
-    color: #311f09;
+    color: #fff;
     span{
         color: #ff8a00;
     }
