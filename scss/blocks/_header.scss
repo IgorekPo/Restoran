@@ -13,7 +13,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 25px 0;
+    margin: 15px 0;
     @media (max-width:767.9px){
     }
 }
@@ -21,8 +21,14 @@
     display: flex;
     align-items: center;
     gap: 18px;
+    @media (max-width:876px){
+        gap: 6px;
+    }
     .logo-img {
         width: 51px;
+        @media (max-width:876px){
+            width: 31px;
+        }
     }
     .logo-text {
         @extend %logoText;
@@ -103,7 +109,7 @@
     display: flex;
     align-items: center;
     gap: 25px;
-    @media(max-width:767.9px){
+    @media (max-width:876px){
         gap: 15px;
     }
     .header__login-cart {
@@ -119,6 +125,10 @@
         &:hover{
             background: #ff8a00;
             transition: all .5s ease;
+        }
+        @media (max-width:876px){
+            padding: 10px 26px;
+            font-weight: 400;   
         }
         @media (max-width:798px){
             font-size: 12px;

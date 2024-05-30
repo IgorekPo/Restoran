@@ -21,9 +21,14 @@ window.onload = function(){
     const paralax = document.querySelector ('.basic');
 
     if (paralax){
-        const pasta = document.querySelector ('.images-basic__pasta');
+        const pasta = document.querySelector ('.pasta-image');
+        const saladOne = document.querySelector ('.basic__image-sald1');
+        const saladTwo = document.querySelector ('.basic__image-sald2');
+
 
         const forPasta = 5;
+        const forsaladOne = 3;
+        const forsaladTwo = 4;
 
         const speed = 0.05;
 
@@ -38,6 +43,9 @@ window.onload = function(){
             positionY = positionY + (distY * speed);
 
             pasta.style.cssText = `transform: translate(${positionX / forPasta}%, ${positionY / forPasta}%)`;
+            saladOne.style.cssText = `transform: translate(${positionX / forsaladOne}%, ${positionY / forsaladOne}%)`;
+            saladTwo.style.cssText = `transform: translate(${positionX / forsaladTwo}%, ${positionY / forsaladTwo}%)`;
+
             requestAnimationFrame(setMouthParalaxStyle);
         }
         setMouthParalaxStyle();

@@ -17,10 +17,10 @@ $maxWidth: 1440;
 @mixin adaptivGap ($pcSize , $mobSize){
     $addSize: $pcSize - $mobSize;
     $addMobSize: $addSize + $addSize * 0.7;
-    @media (max-width: 770px) {
+    @media (max-width: 870px) {
         gap: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 770px) / #{$maxWidth}));
     }
-    @media (min-width: 769px) {
+    @media (min-width: 869px) {
         gap: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}) );
     }
 }

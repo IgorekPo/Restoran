@@ -48,6 +48,15 @@
     color: #e3e2e0;
     @include adaptivFonts ( 20, 14);
 }
+%mainButtonTextColor {
+    padding: 10px 45px;
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 200%;
+    color: #fff;
+    @include adaptivFonts ( 20, 14);
+}
 %footerTitleStyle {
     font-weight: 600;
     line-height: 200%;
