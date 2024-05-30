@@ -1,11 +1,21 @@
 .basic {
     margin-top: 270px;
     margin-bottom: 154px;
+    @media(max-width: 829px){
+        margin-top: 170px;
+    }
+    @media(max-width: 596px){
+        margin-bottom: 0;
+
+    }
     .basic__conteiner {
     }
 }
 .basic__body {
     display: flex;
+    @media(max-width: 596px){
+        flex-wrap: wrap;
+    }
 }
 
 .basic__links {
@@ -13,8 +23,17 @@
     flex-direction: column;
     align-items: flex-start;
     flex: 0 0 50%;
+    @media(max-width: 596px){
+        flex: 0 0 100%;
+        margin-bottom: 45px;
+    }
     .basic__link-restoran {
         transition: all 0.5s ease;
+        @media(max-width: 829px){
+            font-size: 16px;
+            color: #fff;
+            padding: 10px 20px
+        }
         &:hover{
             color: #311f09;
             transition: all 0.5s ease;
@@ -39,12 +58,20 @@
     .basic__text {
         @extend %textFonts;
         margin-bottom: 77px;
-        
+        @media(max-width: 829px){
+        margin-bottom: 37px;
+        }
     }
     .basic__links-links {
         display: flex;
         align-items: center;
         gap: 25px;
+        @media(max-width: 829px){
+            align-items: center;
+            justify-content: space-evenly;
+            width: 100%;
+            gap: 0;
+        }
         .basic__link-order {
             @extend %mainBgColor;
             @extend %mainButtonTextColor;
@@ -55,6 +82,16 @@
                 scale: 1.1;
                 box-shadow: 0 0 20px 5px #ff8a00;
             }
+            @media(max-width: 829px){
+                padding: 6px 20px;
+            }
+            @media(max-width: 596px){
+                padding: 10px 45px;
+            }
+            @media(max-width: 390px){
+                padding: 6px 20px;
+            }
+
         }
         .basic__links-reservation {
             @extend %secondBgColor;
@@ -65,7 +102,15 @@
                 transition: all 0.5s ease;
                 scale: 1.1;
                 box-shadow: 0 0 20px 5px #3fa72f;
-
+            }
+            @media(max-width: 829px){
+                padding: 6px 20px;
+            }
+            @media(max-width: 596px){
+                padding: 10px 45px;
+            }
+            @media(max-width: 390px){
+                padding: 6px 20px;
             }
         }
     }
@@ -76,6 +121,10 @@
 .basic__images {
     position: relative;
     flex: 0 0 50%;
+    @media(max-width: 596px){
+        flex: 0 0 100%;
+        height: 600px;
+    }
     .basic__image-pasta {
         position: relative;
         width: 100%;
