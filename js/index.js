@@ -20,7 +20,7 @@ burgerMenu.addEventListener('click', function(){
 window.onload = function(){
     const paralax = document.querySelector ('.basic');
 
-    if (paralax){
+    if (paralax && window.innerWidth >=768){ 
         const pasta = document.querySelector ('.pasta-image');
         const saladOne = document.querySelector ('.basic__image-sald1');
         const saladTwo = document.querySelector ('.basic__image-sald2');
@@ -63,5 +63,4 @@ window.onload = function(){
         })
     }
 }
-
 // ===========================================================================
