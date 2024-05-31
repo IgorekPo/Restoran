@@ -51,12 +51,9 @@
     }
 
     .basic__title {
-        @extend %titleFonts;
         margin-bottom: 30px;
-
     }
     .basic__text {
-        @extend %textFonts;
         margin-bottom: 77px;
         @media(max-width: 829px){
         margin-bottom: 37px;
@@ -73,9 +70,9 @@
             gap: 0;
         }
         .basic__link-order {
+            transition: all 0.5s ease;
             @extend %mainBgColor;
             @extend %mainButtonTextColor;
-            transition: all 0.5s ease;
             &:hover{
                 color: #311f09;
                 transition: all 0.5s ease;

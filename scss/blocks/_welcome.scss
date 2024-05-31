@@ -1,0 +1,76 @@
+.welcome {
+    background: #2a834951;
+    .welcome__conteiner {
+        .welcome__body {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}
+
+
+.welcome__images {
+    flex: 0 0 60%;
+    position: relative;
+    .welcome__main-image {
+        img{
+        width: 100%;
+        }
+    }
+    .welcome__leaf-image1 {
+        top: 0;
+        right: 0;
+        width: 160px;
+        height: 110px;
+    }
+    .welcome__leaf-image2 {
+        width: 120px;
+        height: 110px;
+    }
+    .welcome__leaf-image3 {
+        bottom: 0;
+        left: 0;
+        width: 180px;
+        height: 160px;
+    }
+}
+.welcome-leaf {
+    position: absolute;
+    img{
+        width: 100%;
+    }
+}
+
+
+.welcome__informations {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 40%;
+    align-self: center;
+    .welcome__title {
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+    .welcome__text {
+        margin-bottom: 30px;
+
+    }
+    .welcome__link {
+        transition: all 0.5s ease;
+        align-self: flex-start;
+        margin-bottom: 60px;
+        @extend %mainBgColor;
+        @extend %mainButtonTextColor;
+        &:hover{
+            color: #311f09;
+            transition: all 0.5s ease;
+            scale: 1.1;
+            box-shadow: 0 0 20px 5px #ff8a00;
+        }
+    }
+}
+
+
+
+

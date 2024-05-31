@@ -253,7 +253,7 @@ li {
   }
 }
 
-.basic__links .basic__links-links .basic__link-order {
+.welcome__informations .welcome__link, .basic__links .basic__links-links .basic__link-order {
   background-color: #ff8a00;
 }
 
@@ -261,37 +261,37 @@ li {
   background-color: #3fa72f;
 }
 
-.basic__links .basic__title {
+.title {
   font-weight: 700;
   line-height: 110%;
   color: #311f09;
 }
 @media (max-width: 767px) {
-  .basic__links .basic__title {
+  .title {
     font-size: calc(35px + 76.5 * (100vw - 320px) / 1440);
   }
 }
 @media (min-width: 767px) {
-  .basic__links .basic__title {
+  .title {
     font-size: calc(35px + 45 * 100vw / 1440);
   }
 }
-.basic__links .basic__title span {
+.title span {
   color: #ff8a00;
 }
 
-.basic__links .basic__text {
+.text {
   font-weight: 400;
   line-height: 200%;
   color: #5c4529;
 }
 @media (max-width: 767px) {
-  .basic__links .basic__text {
+  .text {
     font-size: calc(12px + 13.6 * (100vw - 320px) / 1440);
   }
 }
 @media (min-width: 767px) {
-  .basic__links .basic__text {
+  .text {
     font-size: calc(12px + 8 * 100vw / 1440);
   }
 }
@@ -330,7 +330,7 @@ li {
   }
 }
 
-.basic__links .basic__links-links .basic__links-reservation, .basic__links .basic__links-links .basic__link-order {
+.welcome__informations .welcome__link, .basic__links .basic__links-links .basic__links-reservation, .basic__links .basic__links-links .basic__link-order {
   padding: 10px 45px;
   border-radius: 40px;
   font-weight: 600;
@@ -339,12 +339,12 @@ li {
   color: #fff;
 }
 @media (max-width: 767px) {
-  .basic__links .basic__links-links .basic__links-reservation, .basic__links .basic__links-links .basic__link-order {
+  .welcome__informations .welcome__link, .basic__links .basic__links-links .basic__links-reservation, .basic__links .basic__links-links .basic__link-order {
     font-size: calc(14px + 10.2 * (100vw - 320px) / 1440);
   }
 }
 @media (min-width: 767px) {
-  .basic__links .basic__links-links .basic__links-reservation, .basic__links .basic__links-links .basic__link-order {
+  .welcome__informations .welcome__link, .basic__links .basic__links-links .basic__links-reservation, .basic__links .basic__links-links .basic__link-order {
     font-size: calc(14px + 6 * 100vw / 1440);
   }
 }
@@ -673,4 +673,69 @@ li {
   .basic__images .basic__image-salad2 img {
     width: 50%;
   }
+}
+
+.welcome {
+  background: rgba(42, 131, 73, 0.3176470588);
+}
+.welcome .welcome__conteiner .welcome__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.welcome__images {
+  flex: 0 0 60%;
+  position: relative;
+}
+.welcome__images .welcome__main-image img {
+  width: 100%;
+}
+.welcome__images .welcome__leaf-image1 {
+  top: 0;
+  right: 0;
+  width: 160px;
+  height: 110px;
+}
+.welcome__images .welcome__leaf-image2 {
+  width: 120px;
+  height: 110px;
+}
+.welcome__images .welcome__leaf-image3 {
+  bottom: 0;
+  left: 0;
+  width: 180px;
+  height: 160px;
+}
+
+.welcome-leaf {
+  position: absolute;
+}
+.welcome-leaf img {
+  width: 100%;
+}
+
+.welcome__informations {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 40%;
+  align-self: center;
+}
+.welcome__informations .welcome__title {
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+.welcome__informations .welcome__text {
+  margin-bottom: 30px;
+}
+.welcome__informations .welcome__link {
+  transition: all 0.5s ease;
+  align-self: flex-start;
+  margin-bottom: 60px;
+}
+.welcome__informations .welcome__link:hover {
+  color: #311f09;
+  transition: all 0.5s ease;
+  scale: 1.1;
+  box-shadow: 0 0 20px 5px #ff8a00;
 }/*# sourceMappingURL=main.css.map */
