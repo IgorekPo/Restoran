@@ -222,6 +222,10 @@ li {
     margin-right: 15px;
   }
 }
+.header__login .burger__menu.active {
+  transform: rotate(180deg);
+  transition: all 0.5s ease;
+}
 .header__login .burger__menu.active .burger__menu-icons {
   border: 1.8px solid #ff8a00;
   transition: all 1s ease;
